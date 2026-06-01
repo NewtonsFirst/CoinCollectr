@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://g7nuf2vh2c1f" path="res://Scenes/character_body_2d.tscn" id="2_7qcxv"]
 [ext_resource type="Texture2D" uid="uid://sibiwgnwj0xr" path="res://Assets/Backgrounds/grey.webp" id="2_nyrkn"]
 [ext_resource type="PackedScene" uid="uid://cvk50i1j0kxy3" path="res://Scenes/coin.tscn" id="4_nyrkn"]
+[ext_resource type="PackedScene" uid="uid://djg7w7r52ss5r" path="res://Scenes/player_ui.tscn" id="5_xdpdc"]
+[ext_resource type="PackedScene" uid="uid://cw5r057gk0eg3" path="res://Scenes/spike.tscn" id="6_aql4w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7qcxv"]
 size = Vector2(1152, 137)
@@ -35,21 +37,30 @@ position = Vector2(30, 490)
 position = Vector2(994, 480)
 
 [node name="CoinsCollected" type="Label" parent="." unique_id=451977777]
-offset_left = 10.0
-offset_top = 7.0
-offset_right = 57.0
-offset_bottom = 30.0
+offset_left = 25.0
+offset_top = 64.0
+offset_right = 121.0
+offset_bottom = 106.0
 theme_override_font_sizes/font_size = 30
 text = "Coins: "
 
 [node name="CoinsLabel" type="Label" parent="CoinsCollected" unique_id=1648614681]
 layout_mode = 0
-offset_left = 97.0
-offset_top = 4.0
-offset_right = 137.0
-offset_bottom = 46.0
+offset_left = 99.0
+offset_top = 2.0
+offset_right = 139.0
+offset_bottom = 44.0
 theme_override_font_sizes/font_size = 30
 text = "0 "
 
 [node name="Coin2" parent="." unique_id=750234314 instance=ExtResource("4_nyrkn")]
 position = Vector2(672, 373)
+
+[node name="PlayerUI" parent="." unique_id=1434588119 instance=ExtResource("5_xdpdc")]
+offset_left = -4.0
+offset_top = 1.0
+offset_right = -4.0
+offset_bottom = 1.0
+
+[node name="Spike" parent="." unique_id=614954832 instance=ExtResource("6_aql4w")]
+position = Vector2(455, 505)

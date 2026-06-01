@@ -1,5 +1,7 @@
+res://Scenes/player_ui.tscn
+res://Scripts/player_variables.gd
+res://Scripts/progress_bar.gd
 res://Scenes/Land.tscn
-res://Scenes/Land2.tscn
-res://Scenes/land_2.gd
-res://Scripts/land.gd
-res://Scenes/coin.gd
+res://Scripts/spike.gd
+res://Scenes/spike.tscn
+res://Scenes/character_body_2d.gd

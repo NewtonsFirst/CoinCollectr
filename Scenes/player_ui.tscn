@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://djg7w7r52ss5r"]
+
+[ext_resource type="Script" uid="uid://bdrbu47xtwk1c" path="res://Scripts/progress_bar.gd" id="1_ohrjl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ai1x"]
+bg_color = Color(0, 0, 0, 0.38039216)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ohrjl"]
+bg_color = Color(0.49019608, 1, 0.6, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="PlayerUI" type="Control" unique_id=1434588119]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=2146009602]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 13.0
+offset_right = 413.0
+offset_bottom = 47.0
+theme_override_styles/background = SubResource("StyleBoxFlat_4ai1x")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ohrjl")
+value = 100.0
+show_percentage = false
+script = ExtResource("1_ohrjl")

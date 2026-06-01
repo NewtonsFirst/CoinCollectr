@@ -33,6 +33,9 @@ func DASH(delta):
 		dash_timer -= delta
 		if dash_timer <= 0:
 			is_dashing = false
+			
+func _process(delta: float) -> void:
+	Death()
 
 func Sprint():
 	if Input.is_action_pressed("Sprint"):
@@ -47,3 +50,10 @@ func _physics_process(delta: float) -> void:
 	get_input()
 	DASH(delta)
 	move_and_slide()
+	
+func Death():
+	if PlayerVariables.Player_Health <= 0 and not PlayerVariables.is_dead:
+		PlayerVariables.is_dead = true
+		PlayerVariables.Player_Health = 100
+		PlayerVariables.is_dead = false
+		get_tree().reload_current_scene()

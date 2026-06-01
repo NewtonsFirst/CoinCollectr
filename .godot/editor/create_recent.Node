@@ -1,1 +1,5 @@
+TextureRect
+CollisionShape2D
+Area2D
+ProgressBar
 Node
