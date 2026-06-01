@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cvk50i1j0kxy3"]
+
+[ext_resource type="Script" uid="uid://fid3t40c4qum" path="res://Scenes/coin.gd" id="1_jgi06"]
+[ext_resource type="Texture2D" uid="uid://dwm8udw0p5h0r" path="res://CoinSprite.png" id="2_g537i"]
+[ext_resource type="AudioStream" uid="uid://cw70j2p3j6o4b" path="res://coin-drop-1.mp3" id="3_g537i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h2p6v"]
+radius = 14.0
+height = 50.0
+
+[node name="Coin" type="Area2D" unique_id=1764504441]
+script = ExtResource("1_jgi06")
+
+[node name="CoinImage" type="TextureRect" parent="." unique_id=1619518466]
+texture_filter = 1
+offset_left = -27.0
+offset_top = -29.0
+offset_right = 27.0
+offset_bottom = 28.0
+texture = ExtResource("2_g537i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1977609491]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_h2p6v")
+
+[node name="CoinSFX" type="AudioStreamPlayer" parent="." unique_id=173916040]
+stream = ExtResource("3_g537i")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
