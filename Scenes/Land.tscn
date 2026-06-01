@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://demab6763fkvq"]
 
-[ext_resource type="Script" uid="uid://b7b3mtxe8tt80" path="res://land.gd" id="1_7qcxv"]
+[ext_resource type="Script" uid="uid://b7b3mtxe8tt80" path="res://Scripts/land.gd" id="1_7qcxv"]
 [ext_resource type="PackedScene" uid="uid://g7nuf2vh2c1f" path="res://Scenes/character_body_2d.tscn" id="2_7qcxv"]
-[ext_resource type="Texture2D" uid="uid://sibiwgnwj0xr" path="res://grey.webp" id="2_nyrkn"]
+[ext_resource type="Texture2D" uid="uid://sibiwgnwj0xr" path="res://Assets/Backgrounds/grey.webp" id="2_nyrkn"]
 [ext_resource type="PackedScene" uid="uid://cvk50i1j0kxy3" path="res://Scenes/coin.tscn" id="4_nyrkn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7qcxv"]

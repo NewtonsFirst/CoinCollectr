@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bbabmf58cbpuu"]
 
-[ext_resource type="Script" uid="uid://b7b3mtxe8tt80" path="res://land.gd" id="1_fn1vf"]
-[ext_resource type="Texture2D" uid="uid://sibiwgnwj0xr" path="res://grey.webp" id="2_sjoou"]
+[ext_resource type="Script" uid="uid://b60xfp8w3i2sn" path="res://Scenes/land_2.gd" id="1_fn1vf"]
+[ext_resource type="Texture2D" uid="uid://sibiwgnwj0xr" path="res://Assets/Backgrounds/grey.webp" id="2_sjoou"]
 [ext_resource type="PackedScene" uid="uid://g7nuf2vh2c1f" path="res://Scenes/character_body_2d.tscn" id="3_q8fq1"]
 [ext_resource type="PackedScene" uid="uid://cvk50i1j0kxy3" path="res://Scenes/coin.tscn" id="4_shila"]
 

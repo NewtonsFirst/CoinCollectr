@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b62ppknmw3ynu"]
 
-[ext_resource type="Script" uid="uid://cupecxubc16l4" path="res://player_variables.gd" id="1_ohgtq"]
+[ext_resource type="Script" uid="uid://cupecxubc16l4" path="res://Scripts/player_variables.gd" id="1_ohgtq"]
 
 [node name="PlayerVariables" type="Node" unique_id=716906831]
 script = ExtResource("1_ohgtq")
