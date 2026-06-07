@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c48nbg1li3rfs"
+path="res://.godot/imported/Moon Clicker - Notification 1.wav-dc3bee9dbd0ce2762e7232dda8c7d085.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Moon Clicker - Notification 1.wav"
+dest_files=["res://.godot/imported/Moon Clicker - Notification 1.wav-dc3bee9dbd0ce2762e7232dda8c7d085.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
