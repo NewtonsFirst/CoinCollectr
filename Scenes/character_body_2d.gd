@@ -8,6 +8,7 @@ extends CharacterBody2D
 @export var SPRINT_SPEED: float = 800.0
 
 @onready var DeathSFX: AudioStreamPlayer = $DeathSFX
+@onready var PlayerModel: Sprite2D = $PlayerSprite
 
 var is_floating: bool = false 
 var is_dashing: bool = false
@@ -76,8 +77,11 @@ func _physics_process(delta: float) -> void:
 func Death():
 	if PlayerVariables.Player_Health <= 0 and not PlayerVariables.is_dead:
 		DeathSFX.play()
+		PlayerModel.visible = false
 		PlayerVariables.is_dead = true
+		await DeathSFX.finished
 		PlayerVariables.Player_Health = 100
 		PlayerVariables.is_dead = false
-		get_tree().reload_current_scene()
+		PlayerModel.visible = true
 		position = PlayerVariables.checkpoint
+		get_tree().reload_current_scene()

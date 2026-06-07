@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://3g1v05yhb8rn" path="res://Scenes/character_body_2d.gd" id="1_88kja"]
 [ext_resource type="Texture2D" uid="uid://cgkqe16ikoyyw" path="res://Assets/Player/icon.svg" id="1_ymxaj"]
-[ext_resource type="AudioStream" uid="uid://drlnhj4nlovcx" path="res://Assets/Sounds/hitmarker-sound-effect.mp3" id="3_it8n0"]
+[ext_resource type="AudioStream" uid="uid://wtsbeo2lo05b" path="res://Assets/Sounds/death-splat.mp3" id="3_it8n0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ymxaj"]
 size = Vector2(118, 115)
@@ -15,7 +15,7 @@ position = Vector2(0, 0.5)
 scale = Vector2(0.28, 0.28)
 shape = SubResource("RectangleShape2D_ymxaj")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=91867246]
+[node name="PlayerSprite" type="Sprite2D" parent="." unique_id=91867246]
 scale = Vector2(0.29, 0.29)
 texture = ExtResource("1_ymxaj")
 
