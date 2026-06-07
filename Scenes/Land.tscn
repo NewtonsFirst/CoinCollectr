@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cvk50i1j0kxy3" path="res://Scenes/coin.tscn" id="4_nyrkn"]
 [ext_resource type="PackedScene" uid="uid://djg7w7r52ss5r" path="res://Scenes/player_ui.tscn" id="5_xdpdc"]
 [ext_resource type="PackedScene" uid="uid://cw5r057gk0eg3" path="res://Scenes/spike.tscn" id="6_aql4w"]
+[ext_resource type="PackedScene" uid="uid://bli1etnfvrekk" path="res://Scenes/check_point.tscn" id="7_oj3ln"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7qcxv"]
 size = Vector2(1152, 137)
@@ -64,3 +65,6 @@ offset_bottom = 1.0
 
 [node name="Spike" parent="." unique_id=614954832 instance=ExtResource("6_aql4w")]
 position = Vector2(455, 505)
+
+[node name="CheckPoint" parent="." unique_id=1121306965 instance=ExtResource("7_oj3ln")]
+position = Vector2(752, 511)

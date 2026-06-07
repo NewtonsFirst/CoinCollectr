@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dttphhrox0041" path="res://Scripts/spike.gd" id="1_1hotg"]
 [ext_resource type="Texture2D" uid="uid://cqhm8vcwbc6ax" path="res://Assets/Sprites/Spike.png" id="1_cdj5a"]
+[ext_resource type="AudioStream" uid="uid://drlnhj4nlovcx" path="res://Assets/Sounds/hitmarker-sound-effect.mp3" id="3_2mnih"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1hotg"]
 size = Vector2(71, 55)
@@ -22,5 +23,8 @@ offset_top = -88.0
 offset_right = 54.0
 offset_bottom = 11.0
 texture = ExtResource("1_cdj5a")
+
+[node name="HitSFX" type="AudioStreamPlayer" parent="." unique_id=420963669]
+stream = ExtResource("3_2mnih")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://3g1v05yhb8rn" path="res://Scenes/character_body_2d.gd" id="1_88kja"]
 [ext_resource type="Texture2D" uid="uid://cgkqe16ikoyyw" path="res://Assets/Player/icon.svg" id="1_ymxaj"]
+[ext_resource type="AudioStream" uid="uid://drlnhj4nlovcx" path="res://Assets/Sounds/hitmarker-sound-effect.mp3" id="3_it8n0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ymxaj"]
 size = Vector2(118, 115)
@@ -17,3 +18,6 @@ shape = SubResource("RectangleShape2D_ymxaj")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=91867246]
 scale = Vector2(0.29, 0.29)
 texture = ExtResource("1_ymxaj")
+
+[node name="DeathSFX" type="AudioStreamPlayer" parent="." unique_id=1269900739]
+stream = ExtResource("3_it8n0")

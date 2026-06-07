@@ -1,7 +1,8 @@
-res://Scenes/player_ui.tscn
-res://Scripts/player_variables.gd
-res://Scripts/progress_bar.gd
-res://Scenes/Land.tscn
 res://Scripts/spike.gd
 res://Scenes/spike.tscn
+res://Scenes/character_body_2d.tscn
 res://Scenes/character_body_2d.gd
+res://Scripts/player_variables.gd
+res://area_2d.gd
+res://Scenes/check_point.tscn
+res://Scenes/Land.tscn

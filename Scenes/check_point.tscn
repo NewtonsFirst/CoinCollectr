@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bli1etnfvrekk"]
+
+[ext_resource type="Script" uid="uid://cx0hw15codlvf" path="res://area_2d.gd" id="1_mcmgj"]
+[ext_resource type="Texture2D" uid="uid://bmfpegfomvkcg" path="res://Assets/Sprites/HBH.png" id="2_cdwub"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wxktv"]
+size = Vector2(102, 11)
+
+[node name="CheckPoint" type="Area2D" unique_id=1121306965]
+script = ExtResource("1_mcmgj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1414534134]
+position = Vector2(0, -5.5)
+shape = SubResource("RectangleShape2D_wxktv")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=852981223]
+texture_filter = 1
+offset_left = -55.0
+offset_top = -11.0
+offset_right = 56.0
+texture = ExtResource("2_cdwub")
+expand_mode = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
